@@ -1,1 +1,151 @@
-<!doctype html><html><body>OK</body></html>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Emgoon이 만드는 Android 앱과 개인정보처리방침 안내">
+  <title>Emgoon Apps</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f7fb;
+      --surface: #ffffff;
+      --text: #1f2937;
+      --muted: #667085;
+      --line: #e5e7eb;
+      --accent: #3157d5;
+      --accent-weak: #eef2ff;
+      --shadow: 0 10px 30px rgba(31,41,55,.07);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111318;
+        --surface: #191c22;
+        --text: #f3f4f6;
+        --muted: #aab0bb;
+        --line: #2b3038;
+        --accent: #9db1ff;
+        --accent-weak: #202a49;
+        --shadow: none;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",Roboto,Arial,sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+    header { padding: 72px 0 42px; }
+    .eyebrow { font-size: 14px; font-weight: 700; color: var(--accent); letter-spacing: .04em; }
+    h1 { margin: 8px 0 10px; font-size: clamp(36px, 7vw, 64px); line-height: 1.06; }
+    .lead { max-width: 680px; margin: 0; font-size: 18px; color: var(--muted); }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+    .btn {
+      display: inline-block;
+      padding: 11px 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: var(--surface);
+    }
+    .btn.primary { color: #fff; background: #3157d5; border-color: #3157d5; }
+    section { padding: 22px 0 30px; }
+    h2 { font-size: 26px; margin: 0 0 16px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+    .card h3 { margin: 0 0 8px; font-size: 20px; }
+    .card p { margin: 0; color: var(--muted); }
+    .policy {
+      background: var(--accent-weak);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px;
+    }
+    .policy a { color: var(--accent); font-weight: 700; }
+    .small { color: var(--muted); font-size: 14px; }
+    footer {
+      margin-top: 20px;
+      padding: 28px 0 50px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 720px) {
+      header { padding-top: 48px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="eyebrow">EMGOON · ANDROID APPS</div>
+      <h1>Emgoon Apps</h1>
+      <p class="lead">일상에서 자주 쓰는 기능을 더 간단하고 편리하게 만들기 위해 Android 앱을 개발하고 있습니다.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://play.google.com/store/search?q=emgoon&amp;c=apps" rel="noopener">Google Play에서 앱 보기</a>
+        <a class="btn" href="https://sites.google.com/view/emgoonsoft/%ED%99%88" rel="noopener">개인정보처리방침</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>앱</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>북리스트</h3>
+          <p>책 검색과 바코드 등록, 독서 시간과 페이지 기록, 개인 서재와 통계를 한곳에서 관리하는 독서 기록 앱입니다.</p>
+        </article>
+        <article class="card">
+          <h3>나의 환율계산기</h3>
+          <p>주요 통화의 환율을 빠르게 확인하고 간편하게 계산할 수 있는 환율 도구입니다.</p>
+        </article>
+        <article class="card">
+          <h3>삼삼큐브</h3>
+          <p>3×3 큐브 상태를 입력하거나 스캔하고, 단계별 풀이와 연습을 도와주는 큐브 앱입니다.</p>
+        </article>
+        <article class="card">
+          <h3>리치넘버 6/45</h3>
+          <p>로또 6/45 번호를 간편하게 생성하고 관리할 수 있도록 돕는 번호 생성 도구입니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>개인정보 보호</h2>
+      <div class="policy">
+        <p>각 앱은 기능과 사용되는 외부 서비스에 맞는 개인정보처리방침을 제공합니다.</p>
+        <p><a href="https://sites.google.com/view/emgoonsoft/%ED%99%88" rel="noopener">앱별 개인정보처리방침 보기</a></p>
+        <p class="small">도서 검색, 광고, 외부 API 등 앱마다 데이터 처리 방식이 다를 수 있으므로 각 앱의 개별 방침을 확인해 주세요.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>지원</h2>
+      <div class="card">
+        <p>앱 사용 중 문제가 있거나 개인정보 관련 문의가 있는 경우 Google Play의 각 앱 페이지에 표시된 개발자 연락처를 이용해 주세요.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div>Developer: Emgoon</div>
+      <div>Platform: Android · Distribution: Google Play</div>
+      <div>© 2026 Emgoon. All rights reserved.</div>
+    </footer>
+  </main>
+</body>
+</html>
